@@ -7,9 +7,16 @@ public class DoSort {
     public static void main(String[] arr){
 
         ArrayList<Integer> elems = new ArrayList<Integer>();
+
+        elems.add(5);
+        elems.add(7);
+        elems.add(2);
         elems.add(5);
         elems.add(2);
         elems.add(1);
+        elems.add(-9);
+        elems.add(7);
+        elems.add(-40);
 
         System.out.println("Before Sorting:");
         for (Integer elem : elems) {
@@ -37,7 +44,7 @@ public class DoSort {
         ArrayList<Integer> sortedQuick = qs.asc(elems);
 
         System.out.println("After Quick Sorting:");
-        for (Integer elem : sortedIns)
+        for (Integer elem : sortedQuick)
             System.out.println(elem.intValue());
 
 
